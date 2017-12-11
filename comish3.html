@@ -5,7 +5,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
 		<style>
 			body{
-				background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+				background-color: #ed9ff0;
 				font-family: Bitter;
 			}
 
@@ -113,49 +113,57 @@
 	</head>
    
    <body>
-	<div style="margin: 4% 35% 5% 35%">
+	<div style="margin: 4% 20% 5% 20%">
+		
 		<form name="zodiac">
-			<b><i>Year</i></b>
-			<input class="form-control" type="text" size="10" name="year" placeholder="YYYY" onClick=value="">
-			
-			<br><b><i>Month</i></b>
-				<div style="padding: 0 0">
-					<select class="form-control" name="month">
-					<option value="x">Select Birth Month</option>
-					<option value="01">January</option>
-					<option value="02">February</option>
-					<option value="03">March</option>
-					<option value="04">April</option>
-					<option value="05">May</option>
-					<option value="06">June</option>
-					<option value="07">July</option>
-					<option value="08">August</option>
-					<option value="09">September</option>
-					<option value="10">October</option>
-					<option value="11">November</option>
-					<option value="12">December</option>
-					</select>
-				</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<b><i>Year</i></b>
+				<input class="form-control" type="text" size="10" name="year" placeholder="YYYY" onClick=value="">
+				
+				<br><b><i>Month</i></b>
+					<div style="padding: 0 0">
+						<select class="form-control" name="month">
+						<option value="x">Select Birth Month</option>
+						<option value="01">January</option>
+						<option value="02">February</option>
+						<option value="03">March</option>
+						<option value="04">April</option>
+						<option value="05">May</option>
+						<option value="06">June</option>
+						<option value="07">July</option>
+						<option value="08">August</option>
+						<option value="09">September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12">December</option>
+						</select>
+					</div>
+					<br>
+				<b><i>Day</i></b>
+		
+				<input class="form-control" type="text" name="date"value="Day" size="3" onClick=value="">
 				<br>
-			<b><i>Day</i></b>
-	
-			<input class="form-control" type="text" name="date"value="Day" size="3" onClick=value="">
-			
-			<br>
-			<center><input class="btn btn-info" type="button" value="Calculate" onClick="signs()"></center>
-			<br>
-			<b>ZODIAC SIGN:</b>
-			<label type="text" id="sign" size="12" value="" align="right"></label>
-			<br><b>CHINESE ZODIAC:</b>
-			<label type="text" id="csign" size="12" value="" align="right"></label>
-			<br><b>LUCKY NUMBER:</b>
-			<label type="text" id="luckynum" size="12" value="" align="right"></label>
-			<br><label type="text" id="luckycolor" size="12" value="" align="right"><b><strong>LUCKY COLOR</strong></b></label><br>
-			<b>LEAP YEAR:</b>
-			<label type="text" id="leapyear" size="12" value="" align="right"></label>
-			<br><b>AGE:</b>
-			<label type="text" id="age" size="12" value="" align="right"></label>
+				<center><input class="btn btn-info" type="button" value="Calculate" onClick="signs()"></center>
+			</div>
+
+			<div class="col-sm-6">
+				<br>
+				<b>ZODIAC SIGN:</b>
+				<label type="text" id="sign" size="12" value="" align="right"></label>
+				<br><b>CHINESE ZODIAC:</b>
+				<label type="text" id="csign" size="12" value="" align="right"></label>
+				<br><b>LUCKY NUMBER:</b>
+				<label type="text" id="luckynum" size="12" value="" align="right"></label>
+				<br><label type="text" id="luckycolor" size="12" value="" align="right"><b><strong>LUCKY COLOR</strong></b></label><br>
+				<b>LEAP YEAR:</b>
+				<label type="text" id="leapyear" size="12" value="" align="right"></label>
+				<br><b>AGE:</b>
+				<label type="text" id="age" size="12" value="" align="right"></label>
+			</div>
+		</div>
 		</form>
+		
 	</div>
       
    </body>
